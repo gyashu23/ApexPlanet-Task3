@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+        <h1 class="main-title"><span class="gold">SkillMatrix</span></h1>
+        <p class="subtitle">Test Your Knowledge & Have Fun!</p>
+         <div class="quiz-box">
+        <!-- Progress -->
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <!-- Question Count -->
+        <div class="top-info">
+            <span id="question-number">Question 1 / 10</span>
+            <span id="timer">⏱ 15s</span>
+        </div>
+        <!-- Question -->
+        <h2 id="question">Question will appear here...</h2>
+        <!-- Options -->
+        <div class="options">
+            <button class="option-btn" id="option0"></button>
+            <button class="option-btn" id="option1"></button>
+            <button class="option-btn" id="option2"></button>
+            <button class="option-btn" id="option3"></button>
+        </div>
+        <!-- Navigation -->
+        <div class="buttons">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn"> Next</button>
+        </div>
+    </div>
+    <!-- Result Box -->
+    <div class="result-box hide">
+        <h2>Quiz Completed!</h2>
+        <h3 id="score">Score : 0 / 10</h3>
+        <p id="message"></p>
+        <button id="restartBtn">Restart Quiz</button>
+    </div>
+    <!-- Joke API -->
+    <h1 class="joke-title">Joke of the Moment</h1>
+    <div class="joke-box">
+    <p id="setup">Click the button below.</p>
+    <p id="punchline"></p>
+    <button id="jokeBtn">Get Another Joke</button>
+    </div>
+</div>
+<script src="questions.js"></script>
+<script src="api.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
