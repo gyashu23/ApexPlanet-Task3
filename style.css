@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:linear-gradient(135deg,#2d133f,#0e044d,#135165);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+.main-title{
+    text-align:center;
+    color:white;
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+.subtitle{
+    text-align:center;
+    color:white;
+    font-size:20px;
+    margin-bottom:30px;
+}
+.gold{
+    color:#FFC107;
+}
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+.quiz-box,
+.result-box,
+.joke-box{
+    background:#ffffff;
+    border-radius:15px;
+    padding:30px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+.hide{
+    display:none;
+}
+h1{
+    text-align:center;
+    color:#290245;
+    margin-bottom:20px;
+}
+h2{
+    margin:20px 0;
+    color:#333;
+}
+.progress-container{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+#progress-bar{
+    width:0%;
+    height:100%;
+    background:#0339ad;
+    transition:.5s;
+}
+.top-info{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+    font-weight:bold;
+}
+.options{
+    display:grid;
+    gap:15px;
+}
+.option-btn{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#f1f1f1;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+.option-btn:hover{
+    background:#01236b;
+    color:white;
+    transform:scale(1.03);
+    box-shadow:0 5px 15px rgba(37,99,235,0.3);
+}
+.correct{
+    background:#28a745 !important;
+    color:white;
+}
+.wrong{
+    background:#dc3545 !important;
+    color:white;
+}
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:25px;
+}
+.joke-title{
+    text-align:center;
+    color:#FFC107;
+    font-weight:700;
+    margin-bottom:20px;
+    font-size:36px;
+}
+.buttons button,
+#restartBtn,
+#jokeBtn{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#032879;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+.buttons button:hover,
+#restartBtn:hover,
+#jokeBtn:hover{
+    background:#0f4cf2;
+    transform:translateY(-2px);
+}
+.result-box{
+    text-align:center;
+}
+#score{
+    color:#290345;
+    margin:20px 0;
+}
+#message{
+    margin-bottom:20px;
+    font-size:18px;
+}
+.joke-box h2{
+    text-align:center;
+}
+.joke-box{
+    text-align:center;
+}
+#jokeBtn{
+    display:block;
+    margin:20px auto 0;
+}
+#setup{
+    margin-top:20px;
+    font-weight:bold;
+}
+#punchline{
+    margin:15px 0 20px;
+    color:#555;
+}
+#setup{
+    margin-top:20px;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+}
+
+#punchline{
+    margin:15px 0 20px;
+    color:#555;
+    font-size:18px;
+    text-align:center;
+}
+/* Mobile */
+@media(max-width:768px){
+    .quiz-box,
+    .result-box,
+    .joke-box{
+        padding:20px;
+    }
+    h1{
+        font-size:28px;
+    }
+    h2{
+        font-size:20px;
+    }
+    .option-btn{
+        font-size:15px;
+        padding:12px;
+    }
+    .buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+    .buttons button{
+        width:100%;
+    }
+}
